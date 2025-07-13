@@ -87,3 +87,53 @@ INSERT IGNORE INTO reservations (id, house_id, user_id, checkin_date, checkout_d
 INSERT IGNORE INTO reservations (id, house_id, user_id, checkin_date, checkout_date, number_of_people, amount) VALUES (9, 9, 1, '2023-04-01', '2023-04-02', 5, 9000);
 INSERT IGNORE INTO reservations (id, house_id, user_id, checkin_date, checkout_date, number_of_people, amount) VALUES (10, 10, 1, '2023-04-01', '2023-04-02', 6, 10000);
 INSERT IGNORE INTO reservations (id, house_id, user_id, checkin_date, checkout_date, number_of_people, amount) VALUES (11, 11, 1, '2023-04-01', '2023-04-02', 2, 6000);
+
+/* reviewsテーブル */
+INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (1, 1, 1, 5, '素晴らしい滞在でした。また利用したいです。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (2, 1, 2, 4, '部屋が綺麗で、快適に過ごせました。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (3, 1, 3, 4, 'アクセスが良く、観光に最適でした。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (4, 1, 4, 5, 'スタッフが親切で、気持ちよく滞在できました。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (5, 1, 5, 4, '駅から近く、便利でした。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (6, 1, 6, 5, '周辺の飲食店が充実していて、楽しめました。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (7, 1, 7, 4, '宿泊費が手頃で、コストパフォーマンスが良かったです。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (8, 1, 8, 3, '静かな環境でゆっくり休めました。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (9, 1, 9, 4, '施設内の設備が充実していました。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (10, 1, 10, 5, 'Wi-Fiが快適で助かりました。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (11, 1, 11, 4, '清潔感があり、気持ちよく滞在できました。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, score, content) VALUES (12, 1, 12, 5, '部屋が広く、ゆったり過ごせました。');
+
+/* favoritesテーブル */
+INSERT IGNORE INTO favorites (id, house_id, user_id) VALUES (1, 1, 1);
+INSERT IGNORE INTO favorites (id, house_id, user_id) VALUES (2, 2, 1);
+INSERT IGNORE INTO favorites (id, house_id, user_id) VALUES (3, 3, 1);
+INSERT IGNORE INTO favorites (id, house_id, user_id) VALUES (4, 4, 1);
+INSERT IGNORE INTO favorites (id, house_id, user_id) VALUES (5, 5, 1);
+INSERT IGNORE INTO favorites (id, house_id, user_id) VALUES (6, 6, 1);
+INSERT IGNORE INTO favorites (id, house_id, user_id) VALUES (7, 7, 1);
+INSERT IGNORE INTO favorites (id, house_id, user_id) VALUES (8, 8, 1);
+INSERT IGNORE INTO favorites (id, house_id, user_id) VALUES (9, 9, 1);
+INSERT IGNORE INTO favorites (id, house_id, user_id) VALUES (10, 10, 1);
+INSERT IGNORE INTO favorites (id, house_id, user_id) VALUES (11, 11, 1);
+INSERT IGNORE INTO favorites (id, house_id, user_id) VALUES (12, 12, 1);
+
+/* faqsテーブル */
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (1, '人気の民宿はどのように選ばれていますか？', '人気の民宿は、過去の予約数に基づいてランキングされています。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (2, '新着の民宿はどれくらいの頻度で更新されますか？', '新着民宿の情報は、民宿が新規登録され次第、リアルタイムで反映されます。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (3, '民宿をエリアごとに検索できますか？', 'はい、47都道府県ごとに民宿を絞り込んで検索できます。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (4, '会員登録にはどのような情報が必要ですか？', '氏名、フリガナ、郵便番号、住所、電話番号、メールアドレス、パスワードが必要です。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (5, '会員登録後にメール認証を行う必要がありますか？', 'はい、登録したメールアドレス宛に認証メールを送信しますので、認証を完了してください。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (6, '会員登録が完了しない場合はどうすれば良いですか？', '入力情報を再確認し、問題が解決しない場合はサポートまでお問い合わせください。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (7, 'ログイン情報を忘れた場合はどうすれば良いですか？', '「パスワードを忘れた場合」リンクから再設定を行ってください。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (8, 'ログイン後、どのページに遷移しますか？', 'ログイン後はトップページに遷移します。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (9, '民宿を予算で絞り込むことはできますか？', 'はい、1泊あたりの予算を指定して検索できます。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (10, '検索結果はどのように並べ替えられますか？', '新着順や宿泊料金が安い順に並べ替え可能です。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (11, '検索結果が多い場合、どうやって見れば良いですか？', '検索結果は10件ずつページネーションで表示されます。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (12, '民宿の詳細ページにはどのような情報が表示されますか？', '民宿名、説明、宿泊料金、定員、郵便番号、住所、電話番号などが表示されます。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (13, '民宿を予約するにはどうすれば良いですか？', 'ログイン済みの場合、詳細ページに予約用フォームが表示されます。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (14, '予約確認ページでは何が表示されますか？', 'チェックイン日、チェックアウト日、宿泊人数、宿泊料金などが表示されます。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (15, '支払い方法にはどのような選択肢がありますか？', 'クレジットカードを用いたStripeのオンライン決済に対応しています。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (16, '決済完了後、どこに遷移しますか？', '予約一覧ページに遷移します。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (17, '予約一覧はどのように表示されますか？', 'ログインしているユーザーの予約履歴が10件ずつページネーションで表示されます。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (18, '会員情報はどのように表示されますか？', '氏名、フリガナ、郵便番号、住所、電話番号、メールアドレスが表示されます。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (19, '会員情報を編集するにはどうすれば良いですか？', '会員詳細ページの「編集」リンクから編集ページに遷移できます。');
+INSERT IGNORE INTO faqs (id, question, answer) VALUES (20, '会員情報を変更した後、どこに遷移しますか？', '編集完了後、会員詳細ページに遷移します。');

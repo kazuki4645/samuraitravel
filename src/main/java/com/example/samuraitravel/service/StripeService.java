@@ -191,5 +191,7 @@ public class StripeService {
 		// StripeのAPIとstripe-javaライブラリのバージョンをコンソールに出力する
 		System.out.println("Stripe API Version: " + event.getApiVersion());
 		System.out.println("stripe-java: " + Stripe.VERSION + ", stripe-java API Version: " + Stripe.API_VERSION);
+		System.out.println("イベントタイプ: " + event.getType());
+		System.out.println("イベントJSON: " + event.getDataObjectDeserializer().getRawJson());
 	}
 }
